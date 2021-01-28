@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+  <title>vertical menu bar</title>
+  <style>
+
+    body {height: 100%;
+          margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         box-sizing: border-box;
+         background-color: rgb(203, 207, 214);}
+
+         .container  {
+      float: left;
+      position: relative;
+      text-align: center;
+      color:white;
+      margin:10%;
+      border: 1px solid red;
+      border-radius: 5px 50px 5px 50px;
+      box-shadow: 5px 5px 10px rgb(0, 91, 114);
+    }
+    
+    
+    .text {
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color: white ;
+      
+
+    }
+    #raj:hover {
+      color: rgb(0, 205, 219);
+      
+    }
+    .container:hover{
+      border: 1px solid rgb(209, 179, 10);
+      box-shadow: 5px 5px 10px rgb(7, 7, 7);
+      color:red;
+
+    }
+    
+    .text:hover{
+      color:red;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    
+
+    ul { 
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: black;
+  position:fixed;
+  top:0;
+  width: 100%;
+  }
+    
+      
+    
+
+    li a {
+      float: left;
+       display: block;
+      color:white;
+      text-align:center;
+      padding: 14px 20px;
+      text-decoration:none; 
+      font-weight: bolder;
+      font-variant: small-caps;
+      font-family: sans-serif;
+      
+    }
+    
+    li a:hover{
+        display: block;
+        background-color: rgb(73, 70, 70);
+        color:white;
+    }
+    .image {
+     background-image: url('dddd.jpg');
+      height:400px;
+     background-position:center;
+     background-repeat: no-repeat;
+     background-size: cover;
+      top: 15px;
+      box-shadow: 5px 5px 10px burlywood;
+    
+    }
+    .content {
+        text-align: center;
+      position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px rgb(16, 151, 230);
+        
+}
+        
+    .h2:hover {
+        color:red;
+        font-size: none;
+       
+       
+        
+    }  
+    .button  {
+      background-color:rgb(214, 126, 25);
+      color: white;
+      display: inline-block;
+      
+
+    }
+    .button:hover {
+      background-color: rgb(105, 105, 105);
+      color: white;
+      display: inline-block;
+    } 
+  </style>
+</head>
+<body>
+  <ul>
+<li class="li1"><a href="">Home</a></li>
+<li class="li2"><a href="About-us.html">About us</a></li>
+<li class="li3"><a href="##">FAQ</a></li>
+
+  </ul>
+
+  <div class="image">
+  <div class="content" >
+      <h2 style="h2">My Website</h2>
+      <p>this is my new Website</p>
+      <button type="buttone" class="button" onclick="alert('Thank you! For hiring me!')">Hire Me!</button>
+  </div>
+</div>
+<!--Patter-->
+<div class="container">
+  <a href="https://unsplash.com/s/photos/patern" target="_self">
+  <img src="patter.jpg" alt="Pattern" width="250px" class="img" style="border-radius: 5px 50px 5px 50px;" >
+  
+    <div class="text"><p>Click to more Pattern image</p> </div>
+  </a>
+  </div>
+  <!--nature-->
+  <div class="container">
+    <a href="https://unsplash.com/s/photos/nature" target="_self">
+    <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80" alt="Pattern" width="250px" class="img" style="border-radius: 5px 50px 5px 50px;" >
+    
+      <div class="text" id="raj"><p>Click to more For nature image</p> </div>
+    </a>
+    </div>
+    <!--Patter-->
+<div class="container">
+  <a href="https://unsplash.com/t/fashion" target="_self">
+  <img src="https://images.unsplash.com/photo-1611351903570-bb4d3499c046?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pattern" width="250px" class="img" style="border-radius: 5px 50px 5px 50px;" >
+  
+    <div class="text"><p>Click to more Fashion image</p> </div>
+  </a>
+</div>
+</body>
